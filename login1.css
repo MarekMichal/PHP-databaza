@@ -1,0 +1,24 @@
+body{
+    text-align: center; 
+    background-color:rgb(170, 51, 51);
+
+}
+
+.formular{
+    margin: auto;
+    display: inline-block;
+    text-align: center;    
+    border: solid 1px;
+    background-color: rgb(88, 188, 235);
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 3%;
+}
+h1{
+    text-align: center; 
+
+}
+.login{
+    text-align: center; 
+}
+
