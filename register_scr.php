@@ -57,7 +57,7 @@ $usernameOrEmailAlreadyExists = false;
     else{
         $hasPasswordCertainLength = true;
     }
-    $sql_u = "SELECT * FROM users WHERE Meno='$meno'";
+    $sql_u = "SELECT * FROM users WHERE username='$meno'";
     $sql_e = "SELECT * FROM users WHERE email='$email'";
     $res_u = mysqli_query($link, $sql_u);
     $res_e = mysqli_query($link, $sql_e);
@@ -76,7 +76,7 @@ $usernameOrEmailAlreadyExists = false;
 
     
 
-            $sql = "INSERT INTO users (Email, Meno, Priezvisko, Heslo) VALUES ('$email', '$meno','$priezvisko','$heslo')";
+            $sql = "INSERT INTO users (Email, username, surname, password) VALUES ('$email', '$meno','$priezvisko','$heslo')";
 
             if ($link->query($sql) === TRUE) {
                 header('Location: login1.php');

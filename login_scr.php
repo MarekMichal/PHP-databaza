@@ -5,10 +5,10 @@ require_once ('connection.php');
 $uname = $_POST["username"];
 $psw = $_POST["password"];
 
-$sqlu = "SELECT * FROM `users` WHERE Meno = '$uname'";
-$sqlp = "SELECT * FROM `users` WHERE Heslo = '$psw'";
-$id1 = "SELECT User_ID FROM `users` WHERE Meno = '$uname'";
-$id2 = "SELECT User_ID FROM `users` WHERE Heslo = '$psw'";
+$sqlu = "SELECT * FROM `users` WHERE username = '$uname'";
+$sqlp = "SELECT * FROM `users` WHERE password = '$psw'";
+$id1 = "SELECT id FROM `users` WHERE username = '$uname'";
+$id2 = "SELECT id FROM `users` WHERE password = '$psw'";
 $r_u = mysqli_query($link, $sqlu);
 $r_p = mysqli_query($link, $sqlp);
 $r_idu = mysqli_query($link, $id1);
