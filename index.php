@@ -25,6 +25,8 @@
                     <a href="#" class="btn-btn-danger">Zmazať</a>
                 </span>    
             </li>
+        </a>
+        <?php endforeach;?>
     </ul>
 
 
@@ -60,4 +62,3 @@
 
     </main>
     <?php include('./parts/footer.php') ?>
-
