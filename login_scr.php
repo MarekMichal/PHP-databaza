@@ -1,6 +1,6 @@
 <?php
 
-require_once ('connection.php');
+require_once('connection.php');
 
 $uname = $_POST["username"];
 $psw = $_POST["password"];
@@ -20,12 +20,6 @@ $idp = mysqli_fetch_assoc($r_idp);
 if (mysqli_num_rows($r_u) == 1 && mysqli_num_rows($r_p) > 0 && $idu == $idp) {
     echo "Login successful.";
     header('Location: index.php');
-}
-else{
+} else {
     echo "ERROR";
 }
-
-
-
-
-
