@@ -17,13 +17,15 @@
         <li class="list-group-item list-group-item-action d-flex justify-content-between row">
           <span class="text-danger col-1"><?php echo $user["id"] ?></span>
           <div class="col-2">
-            <img src="./resources <?php echo $user["avatar"] ?>" alt="<?php echo $user["username"] ?>">
+            <img src="./resources/<?php echo $user["avatar"] ?>"> 
+             <img src="./resources/avatar.png<?php echo $user["avatar"]?>">
           </div>
           <span class="col-3"><?php echo $user["username"] ?></span>
           <span class="col-3"><?php echo $user["email"] ?></span>
           <span class="col-3"><?php echo $user["created_at"] ?></span>
-          <div class="col-2 d-flex justify-content-center">
-            <button class="btn btn-danger"> Zmazať</button>
+          <div class="col-3 d-flex justify-content-center">
+            <a class="btn btn-danger mr-2" href="/DeleteUser.php">Zmazať</a>
+            <a class="btn btn-success mr-2" href="/Profile.php">Profil</a>
           </div>
         </li>
       </a>
